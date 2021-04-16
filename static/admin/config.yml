@@ -47,7 +47,7 @@ collections:
     fields:
       - { label: 'Заголовок', name: 'title', widget: 'string', required: true }
       - { label: 'Описание', name: 'description', widget: 'string', required: false }
-      - { label: 'Текст', name: 'body', widget: 'markdown', required: false }
+      - { label: 'Текст поста', name: 'body', widget: 'markdown', required: false }
   - name: 'projects'
     label: 'Projects'
     label_singular: 'Project'
