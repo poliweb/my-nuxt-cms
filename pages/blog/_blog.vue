@@ -21,19 +21,19 @@
 <script>
 export default {
   async asyncData({ $content, params, error }) {
-    let post;
+    let post
     try {
-      post = await $content("blog", params.blog).fetch();
+      post = await $content('blog', params.blog).fetch()
     } catch (e) {
-      error({ message: "Blog post not found" });
+      error({ message: 'Blog post not found' })
     }
-    return { post };
+    return { post }
   },
   methods: {
     formatDate(dateString) {
       const date = new Date(dateString)
       return date.toLocaleDateString(process.env.lang) || ''
-    }
-  }
+    },
+  },
 }
 </script>
